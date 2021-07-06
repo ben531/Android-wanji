@@ -1,0 +1,9 @@
+需要先格式化data分区, 才能将rom文件拷到手机内
+
+
+1. 刷入hav os 中的 bootQ.img , VendorQ.img
+2. 刷入 pixel experience.img
+3. 高级 - 终端命令 输入:	
+	dd if=/dev/zero of=/dev/block/bootdevice/by-name/frp
+	或 dd if=/dev/zero of=/dev/block/bootdevice/by-name/config
+	防止开机校验
